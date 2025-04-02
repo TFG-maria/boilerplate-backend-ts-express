@@ -1,51 +1,32 @@
-# Clean architecture ts-node-expres
+# Boilerplate Backend (TypeScript, Node.js, Express)
 
-Aplicación simple de ts-node-express con la posibilidad de escalar y añadir código de manera sencilla.
+## Description
+This project is a boilerplate template for building backend applications using TypeScript, Node.js, and Express. It is designed to provide a solid foundation for creating scalable and maintainable RESTful APIs. The template includes a well-structured folder architecture and pre-configured tools to streamline development.
 
-## Instalación
-
-```bash
-npm install
+## Folder Structure
+```
+project-name
+├── src
+│   ├── controllers         # Contains controllers for handling requests
+│   ├── models              # Contains use cases for business logic
+│   ├── routes              # Contains route definitions
+│   ├── entities            # Contains entity definitions
+│   ├── dtos                # Contains data transfer objects
+│   ├── app.ts              # Main application file
+│   └── index.ts            # Entry point for the application
+└── README.md               # Project documentation
 ```
 
-## Como levantar el servicio en local
+## Architecture Overview
+The architecture follows a modular and layered approach to ensure separation of concerns and maintainability:
 
-```bash
-npm run dev
-```
+- **Controllers**: Handle incoming HTTP requests and delegate the processing to the appropriate services or business logic.
+- **Models**: Represent the core business logic and use cases of the application.
+- **Routes**: Define the API endpoints and map them to the corresponding controllers.
+- **Entities**: Define the data structures and domain models used throughout the application.
+- **DTOs (Data Transfer Objects)**: Facilitate data validation and transformation between layers.
 
-## Como levantar el servicio para devops
+This structure promotes clean code practices and makes it easier to extend or modify the application as needed.
 
-```bash
-npm run build
-npm run start
-```
-## Como lanzar los test
-
-Actualmente no hay test implementados ni una organización clara, poco a poco se irá modelando.
-
-```bash
-npm run test
-```
-
-## Como crear código
-
-Para trabajar con esta aplicación tenemos una serie de carpetas:
-- Main: donde se configura el servidor.
-- Domain: para generar los modelos con sus validaciones.
-- Application: para generar los servicios que actúan con los modelos.
-- Infraestructure: para generar las capas de I/O, es decir controladores o queries a bases de datos.
-- Interfaces: para generar interfices necesarias que no pertenecen a ningún modelo de dominio.
-- Context: los famosos utils, separados de la aplicación (src), con el objetivo de productivizarse en una librería de haibu node lib.
-
-## Variables de entorno
-
-```sh
-PORT=3000
-```
-
-## Contribución
-
-Las pull requests son bienvenidas. Para grandes cambios, abrid primero un incident para poder discutir en profundidad.
-
-Actualizad los test si es necesario en cada contribución.
+## Note on Deployment
+This repository is intended as a starting point for backend projects. Detailed deployment instructions will be provided in the project's wiki, covering various environments and best practices.
