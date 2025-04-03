@@ -28,5 +28,44 @@ The architecture follows a modular and layered approach to ensure separation of 
 
 This structure promotes clean code practices and makes it easier to extend or modify the application as needed.
 
+## Prerequisites
+- Node.js (v14.x or higher)
+- npm (v6.x or higher) or yarn (v1.x or higher)
+- TypeScript (v4.x or higher)
+
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/TFG-maria/boilerplate-backend-ts-express.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd boilerplate-backend-ts-express
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+## Usage
+1. Evirontment variables
+   ```
+   DB_HOST = your-db-host
+   DB_NAME = your-db-name
+   DB_PASSWORD = your-db-pswd
+   DB_PORT = your-db-port
+   DB_USERNAME = your-db-username
+   HOST = localhost
+   OPENAPI_PATH = ./docs/swagger_output.json
+   PORT=3000
+   ```
+3. Start the development server:
+    ```sh
+    npm run dev
+    ```
+4. Access the application at
+   ```
+   http://localhost:3000.
+   ```
+
 ## Note on Deployment
 This repository is intended as a starting point for backend projects. Detailed deployment instructions will be provided in the project's wiki, covering various environments and best practices.
