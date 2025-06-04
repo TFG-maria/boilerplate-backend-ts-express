@@ -1,5 +1,5 @@
 import app from './app';
-import {RelationalDataSource} from "../context/RelationalDatabase";
+import {RelationalDataSource} from "./persistance/RelationalDatabase";
 
 const PORT = process.env.PORT || 3000;
 

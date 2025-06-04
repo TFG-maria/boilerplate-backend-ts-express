@@ -1,5 +1,5 @@
 import {DataSource} from "typeorm";
-import {User} from "../src/entities/User";
+import {User} from "../entities/User";
 
 let ds: DataSource;
 export const RelationalDataSource = (
